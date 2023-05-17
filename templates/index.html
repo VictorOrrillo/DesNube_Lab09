@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>CRUD App</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>CRUD App</h1>
+  <div class="card">
+    <h2>CRUD App</h2>
+    
     <form action="/upload" method="post" enctype="multipart/form-data">
         <input type="file" name="image" accept="image/*">
         <input type="submit" value="Upload">
     </form>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
